@@ -7,12 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52058CFF22066C4800181A78 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52058CFE22066C4800181A78 /* Event.swift */; };
+		52058D01220692B600181A78 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52058D00220692B600181A78 /* EventTableViewCell.swift */; };
+		5236473F2208B6AB0094D7BE /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5236473E2208B6AB0094D7BE /* NewsViewController.swift */; };
+		523647412208BAB90094D7BE /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523647402208BAB90094D7BE /* News.swift */; };
+		523647432208BC9D0094D7BE /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523647422208BC9D0094D7BE /* NewsTableViewCell.swift */; };
+		523DDC9E220BC53E00180A07 /* GpsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523DDC9D220BC53E00180A07 /* GpsModel.swift */; };
+		525DB06F220A050000C4CF76 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525DB06E220A04FF00C4CF76 /* MapViewController.swift */; };
+		52A4D8BD220E19E7007EB103 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A4D8BC220E19E7007EB103 /* HomeViewController.swift */; };
+		52FF553B2203B4C700E841B7 /* XMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FF553A2203B4C700E841B7 /* XMLParser.swift */; };
+		B53DB239177B058436600A0E /* Pods_CuteBrains.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C01375E1CA9AB3277C6F628 /* Pods_CuteBrains.framework */; };
 		DA8B104E21F10F1F00526956 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8B104D21F10F1F00526956 /* AppDelegate.swift */; };
 		DA8B105021F10F1F00526956 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8B104F21F10F1F00526956 /* ViewController.swift */; };
 		DA8B105321F10F1F00526956 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA8B105121F10F1F00526956 /* Main.storyboard */; };
 		DA8B105521F10F2200526956 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA8B105421F10F2200526956 /* Assets.xcassets */; };
 		DA8B105821F10F2200526956 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA8B105621F10F2200526956 /* LaunchScreen.storyboard */; };
 		DA8B106321F10F2200526956 /* CuteBrainsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8B106221F10F2200526956 /* CuteBrainsTests.swift */; };
+		DA8B107021F11EAF00526956 /* LoginControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8B106F21F11EAF00526956 /* LoginControler.swift */; };
+		DA92510421F4945600D4397A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA92510321F4945600D4397A /* ProfileViewController.swift */; };
+		DA92510621F4AD0800D4397A /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA92510521F4AD0800D4397A /* EventViewController.swift */; };
+		DAD2140821FA2F380054D896 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD2140721FA2F380054D896 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +40,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C01375E1CA9AB3277C6F628 /* Pods_CuteBrains.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CuteBrains.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52058CFE22066C4800181A78 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		52058D00220692B600181A78 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		5236473E2208B6AB0094D7BE /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		523647402208BAB90094D7BE /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		523647422208BC9D0094D7BE /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		523DDC9D220BC53E00180A07 /* GpsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GpsModel.swift; sourceTree = "<group>"; };
+		525DB06E220A04FF00C4CF76 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		52A4D8BC220E19E7007EB103 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		52FF553A2203B4C700E841B7 /* XMLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLParser.swift; sourceTree = "<group>"; };
+		75395B4275D14465B2480D33 /* Pods-CuteBrains.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuteBrains.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CuteBrains/Pods-CuteBrains.debug.xcconfig"; sourceTree = "<group>"; };
+		83055A1C515C8334DBA4C96F /* Pods_CuteBrainsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CuteBrainsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA8B104A21F10F1F00526956 /* CuteBrains.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CuteBrains.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA8B104D21F10F1F00526956 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA8B104F21F10F1F00526956 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +62,11 @@
 		DA8B105E21F10F2200526956 /* CuteBrainsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CuteBrainsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA8B106221F10F2200526956 /* CuteBrainsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuteBrainsTests.swift; sourceTree = "<group>"; };
 		DA8B106421F10F2200526956 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA8B106F21F11EAF00526956 /* LoginControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginControler.swift; sourceTree = "<group>"; };
+		DA92510321F4945600D4397A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		DA92510521F4AD0800D4397A /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		DAD2140721FA2F380054D896 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FF9C4F8D7A9859F5A3192BC6 /* Pods-CuteBrains.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuteBrains.release.xcconfig"; path = "Pods/Target Support Files/Pods-CuteBrains/Pods-CuteBrains.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B53DB239177B058436600A0E /* Pods_CuteBrains.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +88,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37B9ACD3FDFA8F0820E61EA2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C01375E1CA9AB3277C6F628 /* Pods_CuteBrains.framework */,
+				83055A1C515C8334DBA4C96F /* Pods_CuteBrainsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DA8B104121F10F1E00526956 = {
 			isa = PBXGroup;
 			children = (
 				DA8B104C21F10F1F00526956 /* CuteBrains */,
 				DA8B106121F10F2200526956 /* CuteBrainsTests */,
 				DA8B104B21F10F1F00526956 /* Products */,
+				E375C87E5A3507D9FC54CBB1 /* Pods */,
+				37B9ACD3FDFA8F0820E61EA2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,12 +120,15 @@
 		DA8B104C21F10F1F00526956 /* CuteBrains */ = {
 			isa = PBXGroup;
 			children = (
+				DA8B106E21F11E9600526956 /* Models */,
+				DA8B106D21F11E0E00526956 /* Controlers */,
 				DA8B104D21F10F1F00526956 /* AppDelegate.swift */,
 				DA8B104F21F10F1F00526956 /* ViewController.swift */,
 				DA8B105121F10F1F00526956 /* Main.storyboard */,
 				DA8B105421F10F2200526956 /* Assets.xcassets */,
 				DA8B105621F10F2200526956 /* LaunchScreen.storyboard */,
 				DA8B105921F10F2200526956 /* Info.plist */,
+				52FF553A2203B4C700E841B7 /* XMLParser.swift */,
 			);
 			path = CuteBrains;
 			sourceTree = "<group>";
@@ -96,6 +142,41 @@
 			path = CuteBrainsTests;
 			sourceTree = "<group>";
 		};
+		DA8B106D21F11E0E00526956 /* Controlers */ = {
+			isa = PBXGroup;
+			children = (
+				DA8B106F21F11EAF00526956 /* LoginControler.swift */,
+				DA92510321F4945600D4397A /* ProfileViewController.swift */,
+				DA92510521F4AD0800D4397A /* EventViewController.swift */,
+				52058D00220692B600181A78 /* EventTableViewCell.swift */,
+				5236473E2208B6AB0094D7BE /* NewsViewController.swift */,
+				523647422208BC9D0094D7BE /* NewsTableViewCell.swift */,
+				525DB06E220A04FF00C4CF76 /* MapViewController.swift */,
+				52A4D8BC220E19E7007EB103 /* HomeViewController.swift */,
+			);
+			path = Controlers;
+			sourceTree = "<group>";
+		};
+		DA8B106E21F11E9600526956 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DAD2140721FA2F380054D896 /* User.swift */,
+				52058CFE22066C4800181A78 /* Event.swift */,
+				523647402208BAB90094D7BE /* News.swift */,
+				523DDC9D220BC53E00180A07 /* GpsModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E375C87E5A3507D9FC54CBB1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				75395B4275D14465B2480D33 /* Pods-CuteBrains.debug.xcconfig */,
+				FF9C4F8D7A9859F5A3192BC6 /* Pods-CuteBrains.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +184,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA8B106721F10F2200526956 /* Build configuration list for PBXNativeTarget "CuteBrains" */;
 			buildPhases = (
+				64A583A7F5B882709A53702A /* [CP] Check Pods Manifest.lock */,
 				DA8B104621F10F1F00526956 /* Sources */,
 				DA8B104721F10F1F00526956 /* Frameworks */,
 				DA8B104821F10F1F00526956 /* Resources */,
+				2ADBE3597265A4D1CAFF8CE0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -192,13 +275,77 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2ADBE3597265A4D1CAFF8CE0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CuteBrains/Pods-CuteBrains-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireXmlToObjects/AlamofireXmlToObjects.framework",
+				"${BUILT_PRODUCTS_DIR}/EVReflection/EVReflection.framework",
+				"${BUILT_PRODUCTS_DIR}/SWXMLHash/SWXMLHash.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyXMLParser/SwiftyXMLParser.framework",
+				"${BUILT_PRODUCTS_DIR}/XMLDictionary/XMLDictionary.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireXmlToObjects.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EVReflection.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWXMLHash.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyXMLParser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XMLDictionary.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CuteBrains/Pods-CuteBrains-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64A583A7F5B882709A53702A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CuteBrains-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DA8B104621F10F1F00526956 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52FF553B2203B4C700E841B7 /* XMLParser.swift in Sources */,
+				523647432208BC9D0094D7BE /* NewsTableViewCell.swift in Sources */,
+				DA92510621F4AD0800D4397A /* EventViewController.swift in Sources */,
+				523647412208BAB90094D7BE /* News.swift in Sources */,
+				52058D01220692B600181A78 /* EventTableViewCell.swift in Sources */,
+				52A4D8BD220E19E7007EB103 /* HomeViewController.swift in Sources */,
+				52058CFF22066C4800181A78 /* Event.swift in Sources */,
+				525DB06F220A050000C4CF76 /* MapViewController.swift in Sources */,
 				DA8B105021F10F1F00526956 /* ViewController.swift in Sources */,
+				523DDC9E220BC53E00180A07 /* GpsModel.swift in Sources */,
 				DA8B104E21F10F1F00526956 /* AppDelegate.swift in Sources */,
+				DA92510421F4945600D4397A /* ProfileViewController.swift in Sources */,
+				5236473F2208B6AB0094D7BE /* NewsViewController.swift in Sources */,
+				DAD2140821FA2F380054D896 /* User.swift in Sources */,
+				DA8B107021F11EAF00526956 /* LoginControler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +505,7 @@
 		};
 		DA8B106821F10F2200526956 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75395B4275D14465B2480D33 /* Pods-CuteBrains.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -376,6 +524,7 @@
 		};
 		DA8B106921F10F2200526956 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF9C4F8D7A9859F5A3192BC6 /* Pods-CuteBrains.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
