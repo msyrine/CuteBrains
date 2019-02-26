@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		520379992225A6AE008A49EB /* TimeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520379982225A6AE008A49EB /* TimeTable.swift */; };
 		52058CFF22066C4800181A78 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52058CFE22066C4800181A78 /* Event.swift */; };
 		52058D01220692B600181A78 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52058D00220692B600181A78 /* EventTableViewCell.swift */; };
 		5236473F2208B6AB0094D7BE /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5236473E2208B6AB0094D7BE /* NewsViewController.swift */; };
@@ -14,6 +15,9 @@
 		523647432208BC9D0094D7BE /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523647422208BC9D0094D7BE /* NewsTableViewCell.swift */; };
 		523DDC9E220BC53E00180A07 /* GpsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523DDC9D220BC53E00180A07 /* GpsModel.swift */; };
 		525DB06F220A050000C4CF76 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525DB06E220A04FF00C4CF76 /* MapViewController.swift */; };
+		525F94E6222575AB0082D5A8 /* TimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525F94E5222575AB0082D5A8 /* TimeTableViewController.swift */; };
+		525F94E8222576E50082D5A8 /* TimeTableCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525F94E7222576E50082D5A8 /* TimeTableCollectionViewCell.swift */; };
+		525F94EA222577040082D5A8 /* TimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525F94E9222577040082D5A8 /* TimeTableViewCell.swift */; };
 		52A4D8BD220E19E7007EB103 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A4D8BC220E19E7007EB103 /* HomeViewController.swift */; };
 		52FF553B2203B4C700E841B7 /* XMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FF553A2203B4C700E841B7 /* XMLParser.swift */; };
 		B53DB239177B058436600A0E /* Pods_CuteBrains.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C01375E1CA9AB3277C6F628 /* Pods_CuteBrains.framework */; };
@@ -41,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		2C01375E1CA9AB3277C6F628 /* Pods_CuteBrains.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CuteBrains.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		520379982225A6AE008A49EB /* TimeTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTable.swift; sourceTree = "<group>"; };
 		52058CFE22066C4800181A78 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		52058D00220692B600181A78 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
 		5236473E2208B6AB0094D7BE /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +53,9 @@
 		523647422208BC9D0094D7BE /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		523DDC9D220BC53E00180A07 /* GpsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GpsModel.swift; sourceTree = "<group>"; };
 		525DB06E220A04FF00C4CF76 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		525F94E5222575AB0082D5A8 /* TimeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableViewController.swift; sourceTree = "<group>"; };
+		525F94E7222576E50082D5A8 /* TimeTableCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableCollectionViewCell.swift; sourceTree = "<group>"; };
+		525F94E9222577040082D5A8 /* TimeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableViewCell.swift; sourceTree = "<group>"; };
 		52A4D8BC220E19E7007EB103 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		52FF553A2203B4C700E841B7 /* XMLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLParser.swift; sourceTree = "<group>"; };
 		75395B4275D14465B2480D33 /* Pods-CuteBrains.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuteBrains.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CuteBrains/Pods-CuteBrains.debug.xcconfig"; sourceTree = "<group>"; };
@@ -153,6 +161,9 @@
 				523647422208BC9D0094D7BE /* NewsTableViewCell.swift */,
 				525DB06E220A04FF00C4CF76 /* MapViewController.swift */,
 				52A4D8BC220E19E7007EB103 /* HomeViewController.swift */,
+				525F94E5222575AB0082D5A8 /* TimeTableViewController.swift */,
+				525F94E7222576E50082D5A8 /* TimeTableCollectionViewCell.swift */,
+				525F94E9222577040082D5A8 /* TimeTableViewCell.swift */,
 			);
 			path = Controlers;
 			sourceTree = "<group>";
@@ -164,6 +175,7 @@
 				52058CFE22066C4800181A78 /* Event.swift */,
 				523647402208BAB90094D7BE /* News.swift */,
 				523DDC9D220BC53E00180A07 /* GpsModel.swift */,
+				520379982225A6AE008A49EB /* TimeTable.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -337,6 +349,7 @@
 				523647412208BAB90094D7BE /* News.swift in Sources */,
 				52058D01220692B600181A78 /* EventTableViewCell.swift in Sources */,
 				52A4D8BD220E19E7007EB103 /* HomeViewController.swift in Sources */,
+				525F94E8222576E50082D5A8 /* TimeTableCollectionViewCell.swift in Sources */,
 				52058CFF22066C4800181A78 /* Event.swift in Sources */,
 				525DB06F220A050000C4CF76 /* MapViewController.swift in Sources */,
 				DA8B105021F10F1F00526956 /* ViewController.swift in Sources */,
@@ -344,7 +357,10 @@
 				DA8B104E21F10F1F00526956 /* AppDelegate.swift in Sources */,
 				DA92510421F4945600D4397A /* ProfileViewController.swift in Sources */,
 				5236473F2208B6AB0094D7BE /* NewsViewController.swift in Sources */,
+				525F94EA222577040082D5A8 /* TimeTableViewCell.swift in Sources */,
+				520379992225A6AE008A49EB /* TimeTable.swift in Sources */,
 				DAD2140821FA2F380054D896 /* User.swift in Sources */,
+				525F94E6222575AB0082D5A8 /* TimeTableViewController.swift in Sources */,
 				DA8B107021F11EAF00526956 /* LoginControler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
