@@ -10,10 +10,21 @@
 		520379992225A6AE008A49EB /* TimeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520379982225A6AE008A49EB /* TimeTable.swift */; };
 		52058CFF22066C4800181A78 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52058CFE22066C4800181A78 /* Event.swift */; };
 		52058D01220692B600181A78 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52058D00220692B600181A78 /* EventTableViewCell.swift */; };
+		5207986E22288D9800805FEF /* LeaveType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5207986D22288D9800805FEF /* LeaveType.swift */; };
+		520798702228980D00805FEF /* MyLeavesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5207986F2228980D00805FEF /* MyLeavesTableViewCell.swift */; };
+		520798722228982900805FEF /* MyLeavesExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520798712228982900805FEF /* MyLeavesExtension.swift */; };
+		52079874222899CE00805FEF /* MyLeaves.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52079873222899CE00805FEF /* MyLeaves.swift */; };
+		521FF3D4222C41CB00BCA8AE /* MyClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521FF3D3222C41CB00BCA8AE /* MyClassViewController.swift */; };
+		521FF3D6222C41E500BCA8AE /* MyClassCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521FF3D5222C41E500BCA8AE /* MyClassCollectionViewCell.swift */; };
+		521FF3D9222C420800BCA8AE /* MyClassExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521FF3D8222C420800BCA8AE /* MyClassExtensions.swift */; };
+		521FF3DB222C421C00BCA8AE /* MyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521FF3DA222C421C00BCA8AE /* MyClass.swift */; };
 		5236473F2208B6AB0094D7BE /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5236473E2208B6AB0094D7BE /* NewsViewController.swift */; };
 		523647412208BAB90094D7BE /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523647402208BAB90094D7BE /* News.swift */; };
 		523647432208BC9D0094D7BE /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523647422208BC9D0094D7BE /* NewsTableViewCell.swift */; };
 		523DDC9E220BC53E00180A07 /* GpsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523DDC9D220BC53E00180A07 /* GpsModel.swift */; };
+		524811BA22286FCE008F9F57 /* LeaveTypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524811B922286FCE008F9F57 /* LeaveTypeTableViewCell.swift */; };
+		524811BC2228757D008F9F57 /* MyLeavesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524811BB2228757D008F9F57 /* MyLeavesViewController.swift */; };
+		524811C02228762D008F9F57 /* LeavesTypeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524811BF2228762D008F9F57 /* LeavesTypeExtensions.swift */; };
 		525DB06F220A050000C4CF76 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525DB06E220A04FF00C4CF76 /* MapViewController.swift */; };
 		525F94E6222575AB0082D5A8 /* TimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525F94E5222575AB0082D5A8 /* TimeTableViewController.swift */; };
 		525F94E8222576E50082D5A8 /* TimeTableCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525F94E7222576E50082D5A8 /* TimeTableCollectionViewCell.swift */; };
@@ -48,10 +59,21 @@
 		520379982225A6AE008A49EB /* TimeTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTable.swift; sourceTree = "<group>"; };
 		52058CFE22066C4800181A78 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		52058D00220692B600181A78 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		5207986D22288D9800805FEF /* LeaveType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveType.swift; sourceTree = "<group>"; };
+		5207986F2228980D00805FEF /* MyLeavesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLeavesTableViewCell.swift; sourceTree = "<group>"; };
+		520798712228982900805FEF /* MyLeavesExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLeavesExtension.swift; sourceTree = "<group>"; };
+		52079873222899CE00805FEF /* MyLeaves.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLeaves.swift; sourceTree = "<group>"; };
+		521FF3D3222C41CB00BCA8AE /* MyClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClassViewController.swift; sourceTree = "<group>"; };
+		521FF3D5222C41E500BCA8AE /* MyClassCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClassCollectionViewCell.swift; sourceTree = "<group>"; };
+		521FF3D8222C420800BCA8AE /* MyClassExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClassExtensions.swift; sourceTree = "<group>"; };
+		521FF3DA222C421C00BCA8AE /* MyClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClass.swift; sourceTree = "<group>"; };
 		5236473E2208B6AB0094D7BE /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		523647402208BAB90094D7BE /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		523647422208BC9D0094D7BE /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		523DDC9D220BC53E00180A07 /* GpsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GpsModel.swift; sourceTree = "<group>"; };
+		524811B922286FCE008F9F57 /* LeaveTypeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveTypeTableViewCell.swift; sourceTree = "<group>"; };
+		524811BB2228757D008F9F57 /* MyLeavesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLeavesViewController.swift; sourceTree = "<group>"; };
+		524811BF2228762D008F9F57 /* LeavesTypeExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeavesTypeExtensions.swift; sourceTree = "<group>"; };
 		525DB06E220A04FF00C4CF76 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		525F94E5222575AB0082D5A8 /* TimeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableViewController.swift; sourceTree = "<group>"; };
 		525F94E7222576E50082D5A8 /* TimeTableCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -105,6 +127,104 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		521FF3CB222C40F500BCA8AE /* events */ = {
+			isa = PBXGroup;
+			children = (
+				DA92510521F4AD0800D4397A /* EventViewController.swift */,
+				52058D00220692B600181A78 /* EventTableViewCell.swift */,
+			);
+			path = events;
+			sourceTree = "<group>";
+		};
+		521FF3CC222C410400BCA8AE /* news */ = {
+			isa = PBXGroup;
+			children = (
+				5236473E2208B6AB0094D7BE /* NewsViewController.swift */,
+				523647422208BC9D0094D7BE /* NewsTableViewCell.swift */,
+			);
+			path = news;
+			sourceTree = "<group>";
+		};
+		521FF3CD222C411200BCA8AE /* profile */ = {
+			isa = PBXGroup;
+			children = (
+				DA92510321F4945600D4397A /* ProfileViewController.swift */,
+			);
+			path = profile;
+			sourceTree = "<group>";
+		};
+		521FF3CE222C411C00BCA8AE /* login */ = {
+			isa = PBXGroup;
+			children = (
+				DA8B106F21F11EAF00526956 /* LoginControler.swift */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		521FF3CF222C412800BCA8AE /* home */ = {
+			isa = PBXGroup;
+			children = (
+				52A4D8BC220E19E7007EB103 /* HomeViewController.swift */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		521FF3D0222C413200BCA8AE /* transport */ = {
+			isa = PBXGroup;
+			children = (
+				525DB06E220A04FF00C4CF76 /* MapViewController.swift */,
+			);
+			path = transport;
+			sourceTree = "<group>";
+		};
+		521FF3D1222C413D00BCA8AE /* timetable */ = {
+			isa = PBXGroup;
+			children = (
+				525F94E5222575AB0082D5A8 /* TimeTableViewController.swift */,
+				525F94E7222576E50082D5A8 /* TimeTableCollectionViewCell.swift */,
+				525F94E9222577040082D5A8 /* TimeTableViewCell.swift */,
+			);
+			path = timetable;
+			sourceTree = "<group>";
+		};
+		521FF3D2222C41A800BCA8AE /* myClass */ = {
+			isa = PBXGroup;
+			children = (
+				521FF3D7222C41EA00BCA8AE /* extensions */,
+				521FF3D3222C41CB00BCA8AE /* MyClassViewController.swift */,
+				521FF3D5222C41E500BCA8AE /* MyClassCollectionViewCell.swift */,
+			);
+			path = myClass;
+			sourceTree = "<group>";
+		};
+		521FF3D7222C41EA00BCA8AE /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				521FF3D8222C420800BCA8AE /* MyClassExtensions.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		524811BD222875FC008F9F57 /* extensionLeaves */ = {
+			isa = PBXGroup;
+			children = (
+				524811BF2228762D008F9F57 /* LeavesTypeExtensions.swift */,
+				520798712228982900805FEF /* MyLeavesExtension.swift */,
+			);
+			path = extensionLeaves;
+			sourceTree = "<group>";
+		};
+		524811BE22287605008F9F57 /* Leaves */ = {
+			isa = PBXGroup;
+			children = (
+				524811B922286FCE008F9F57 /* LeaveTypeTableViewCell.swift */,
+				524811BB2228757D008F9F57 /* MyLeavesViewController.swift */,
+				524811BD222875FC008F9F57 /* extensionLeaves */,
+				5207986F2228980D00805FEF /* MyLeavesTableViewCell.swift */,
+			);
+			path = Leaves;
+			sourceTree = "<group>";
+		};
 		DA8B104121F10F1E00526956 = {
 			isa = PBXGroup;
 			children = (
@@ -153,17 +273,15 @@
 		DA8B106D21F11E0E00526956 /* Controlers */ = {
 			isa = PBXGroup;
 			children = (
-				DA8B106F21F11EAF00526956 /* LoginControler.swift */,
-				DA92510321F4945600D4397A /* ProfileViewController.swift */,
-				DA92510521F4AD0800D4397A /* EventViewController.swift */,
-				52058D00220692B600181A78 /* EventTableViewCell.swift */,
-				5236473E2208B6AB0094D7BE /* NewsViewController.swift */,
-				523647422208BC9D0094D7BE /* NewsTableViewCell.swift */,
-				525DB06E220A04FF00C4CF76 /* MapViewController.swift */,
-				52A4D8BC220E19E7007EB103 /* HomeViewController.swift */,
-				525F94E5222575AB0082D5A8 /* TimeTableViewController.swift */,
-				525F94E7222576E50082D5A8 /* TimeTableCollectionViewCell.swift */,
-				525F94E9222577040082D5A8 /* TimeTableViewCell.swift */,
+				521FF3D2222C41A800BCA8AE /* myClass */,
+				521FF3D1222C413D00BCA8AE /* timetable */,
+				521FF3D0222C413200BCA8AE /* transport */,
+				521FF3CF222C412800BCA8AE /* home */,
+				521FF3CE222C411C00BCA8AE /* login */,
+				521FF3CD222C411200BCA8AE /* profile */,
+				521FF3CC222C410400BCA8AE /* news */,
+				521FF3CB222C40F500BCA8AE /* events */,
+				524811BE22287605008F9F57 /* Leaves */,
 			);
 			path = Controlers;
 			sourceTree = "<group>";
@@ -176,6 +294,9 @@
 				523647402208BAB90094D7BE /* News.swift */,
 				523DDC9D220BC53E00180A07 /* GpsModel.swift */,
 				520379982225A6AE008A49EB /* TimeTable.swift */,
+				5207986D22288D9800805FEF /* LeaveType.swift */,
+				52079873222899CE00805FEF /* MyLeaves.swift */,
+				521FF3DA222C421C00BCA8AE /* MyClass.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -345,18 +466,29 @@
 			files = (
 				52FF553B2203B4C700E841B7 /* XMLParser.swift in Sources */,
 				523647432208BC9D0094D7BE /* NewsTableViewCell.swift in Sources */,
+				521FF3DB222C421C00BCA8AE /* MyClass.swift in Sources */,
 				DA92510621F4AD0800D4397A /* EventViewController.swift in Sources */,
+				52079874222899CE00805FEF /* MyLeaves.swift in Sources */,
+				524811C02228762D008F9F57 /* LeavesTypeExtensions.swift in Sources */,
 				523647412208BAB90094D7BE /* News.swift in Sources */,
+				521FF3D4222C41CB00BCA8AE /* MyClassViewController.swift in Sources */,
 				52058D01220692B600181A78 /* EventTableViewCell.swift in Sources */,
 				52A4D8BD220E19E7007EB103 /* HomeViewController.swift in Sources */,
+				521FF3D6222C41E500BCA8AE /* MyClassCollectionViewCell.swift in Sources */,
+				520798722228982900805FEF /* MyLeavesExtension.swift in Sources */,
+				520798702228980D00805FEF /* MyLeavesTableViewCell.swift in Sources */,
 				525F94E8222576E50082D5A8 /* TimeTableCollectionViewCell.swift in Sources */,
 				52058CFF22066C4800181A78 /* Event.swift in Sources */,
 				525DB06F220A050000C4CF76 /* MapViewController.swift in Sources */,
 				DA8B105021F10F1F00526956 /* ViewController.swift in Sources */,
 				523DDC9E220BC53E00180A07 /* GpsModel.swift in Sources */,
+				524811BC2228757D008F9F57 /* MyLeavesViewController.swift in Sources */,
 				DA8B104E21F10F1F00526956 /* AppDelegate.swift in Sources */,
 				DA92510421F4945600D4397A /* ProfileViewController.swift in Sources */,
+				524811BA22286FCE008F9F57 /* LeaveTypeTableViewCell.swift in Sources */,
+				521FF3D9222C420800BCA8AE /* MyClassExtensions.swift in Sources */,
 				5236473F2208B6AB0094D7BE /* NewsViewController.swift in Sources */,
+				5207986E22288D9800805FEF /* LeaveType.swift in Sources */,
 				525F94EA222577040082D5A8 /* TimeTableViewCell.swift in Sources */,
 				520379992225A6AE008A49EB /* TimeTable.swift in Sources */,
 				DAD2140821FA2F380054D896 /* User.swift in Sources */,
