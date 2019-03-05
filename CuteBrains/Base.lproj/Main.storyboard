@@ -2764,10 +2764,10 @@
             </objects>
             <point key="canvasLocation" x="4261.6000000000004" y="1690.704647676162"/>
         </scene>
-        <!--View Controller-->
+        <!--Apply Leave View Controller-->
         <scene sceneID="YJh-Iq-V9s">
             <objects>
-                <viewController id="E0k-x4-NA7" sceneMemberID="viewController">
+                <viewController id="E0k-x4-NA7" customClass="ApplyLeaveViewController" customModule="CuteBrains" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tZp-aU-Ckt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2850,6 +2850,9 @@
                                 <state key="normal" title="Send">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="applyLeaveButton:" destination="E0k-x4-NA7" eventType="touchUpInside" id="gxF-wM-EK8"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.7725490196" green="0.91372549020000005" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2895,6 +2898,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mkX-sk-Cld"/>
                     </view>
+                    <connections>
+                        <outlet property="FromTextField" destination="twx-bK-4ag" id="Xaa-ua-WRb"/>
+                        <outlet property="IsHalfDayPickerView" destination="Jbw-Pb-Gl4" id="4VS-GR-Pp0"/>
+                        <outlet property="LeaveTypePickerView" destination="Jog-Ri-pEr" id="wNc-dD-t5M"/>
+                        <outlet property="ReasonTextField" destination="yvT-yn-LMM" id="3QG-uv-jfR"/>
+                        <outlet property="ToTextField" destination="IoU-oo-Soi" id="LDF-gm-PgQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UyH-Vx-96o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

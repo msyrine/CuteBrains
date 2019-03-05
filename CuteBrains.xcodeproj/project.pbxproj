@@ -37,6 +37,7 @@
 		52684222222EE7A500948BB7 /* StudentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52684221222EE7A500948BB7 /* StudentsViewController.swift */; };
 		52684224222EE7F800948BB7 /* StudentsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52684223222EE7F800948BB7 /* StudentsExtensions.swift */; };
 		52684226222EEFCF00948BB7 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52684225222EEFCF00948BB7 /* Student.swift */; };
+		52684228222F0D1F00948BB7 /* ApplyLeaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52684227222F0D1F00948BB7 /* ApplyLeaveViewController.swift */; };
 		52A4D8BD220E19E7007EB103 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A4D8BC220E19E7007EB103 /* HomeViewController.swift */; };
 		52FF553B2203B4C700E841B7 /* XMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FF553A2203B4C700E841B7 /* XMLParser.swift */; };
 		B53DB239177B058436600A0E /* Pods_CuteBrains.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C01375E1CA9AB3277C6F628 /* Pods_CuteBrains.framework */; };
@@ -94,6 +95,7 @@
 		52684221222EE7A500948BB7 /* StudentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsViewController.swift; sourceTree = "<group>"; };
 		52684223222EE7F800948BB7 /* StudentsExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsExtensions.swift; sourceTree = "<group>"; };
 		52684225222EEFCF00948BB7 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		52684227222F0D1F00948BB7 /* ApplyLeaveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyLeaveViewController.swift; sourceTree = "<group>"; };
 		52A4D8BC220E19E7007EB103 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		52FF553A2203B4C700E841B7 /* XMLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLParser.swift; sourceTree = "<group>"; };
 		75395B4275D14465B2480D33 /* Pods-CuteBrains.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuteBrains.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CuteBrains/Pods-CuteBrains.debug.xcconfig"; sourceTree = "<group>"; };
@@ -237,6 +239,7 @@
 				524811BB2228757D008F9F57 /* MyLeavesViewController.swift */,
 				524811BD222875FC008F9F57 /* extensionLeaves */,
 				5207986F2228980D00805FEF /* MyLeavesTableViewCell.swift */,
+				52684227222F0D1F00948BB7 /* ApplyLeaveViewController.swift */,
 			);
 			path = Leaves;
 			sourceTree = "<group>";
@@ -521,6 +524,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52684224222EE7F800948BB7 /* StudentsExtensions.swift in Sources */,
+				52684228222F0D1F00948BB7 /* ApplyLeaveViewController.swift in Sources */,
 				52FF553B2203B4C700E841B7 /* XMLParser.swift in Sources */,
 				523647432208BC9D0094D7BE /* NewsTableViewCell.swift in Sources */,
 				52684220222EE77C00948BB7 /* StudentsTableViewCell.swift in Sources */,
