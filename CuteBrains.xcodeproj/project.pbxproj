@@ -29,6 +29,14 @@
 		525F94E6222575AB0082D5A8 /* TimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525F94E5222575AB0082D5A8 /* TimeTableViewController.swift */; };
 		525F94E8222576E50082D5A8 /* TimeTableCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525F94E7222576E50082D5A8 /* TimeTableCollectionViewCell.swift */; };
 		525F94EA222577040082D5A8 /* TimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525F94E9222577040082D5A8 /* TimeTableViewCell.swift */; };
+		52684215222ED3BC00948BB7 /* SubjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52684214222ED3BC00948BB7 /* SubjectsViewController.swift */; };
+		52684217222ED3DA00948BB7 /* SubjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52684216222ED3DA00948BB7 /* SubjectTableViewCell.swift */; };
+		5268421A222ED40300948BB7 /* SubjectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52684219222ED40300948BB7 /* SubjectExtensions.swift */; };
+		5268421C222ED5AA00948BB7 /* Subjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5268421B222ED5AA00948BB7 /* Subjects.swift */; };
+		52684220222EE77C00948BB7 /* StudentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5268421F222EE77C00948BB7 /* StudentsTableViewCell.swift */; };
+		52684222222EE7A500948BB7 /* StudentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52684221222EE7A500948BB7 /* StudentsViewController.swift */; };
+		52684224222EE7F800948BB7 /* StudentsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52684223222EE7F800948BB7 /* StudentsExtensions.swift */; };
+		52684226222EEFCF00948BB7 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52684225222EEFCF00948BB7 /* Student.swift */; };
 		52A4D8BD220E19E7007EB103 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A4D8BC220E19E7007EB103 /* HomeViewController.swift */; };
 		52FF553B2203B4C700E841B7 /* XMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FF553A2203B4C700E841B7 /* XMLParser.swift */; };
 		B53DB239177B058436600A0E /* Pods_CuteBrains.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C01375E1CA9AB3277C6F628 /* Pods_CuteBrains.framework */; };
@@ -78,6 +86,14 @@
 		525F94E5222575AB0082D5A8 /* TimeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableViewController.swift; sourceTree = "<group>"; };
 		525F94E7222576E50082D5A8 /* TimeTableCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableCollectionViewCell.swift; sourceTree = "<group>"; };
 		525F94E9222577040082D5A8 /* TimeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableViewCell.swift; sourceTree = "<group>"; };
+		52684214222ED3BC00948BB7 /* SubjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectsViewController.swift; sourceTree = "<group>"; };
+		52684216222ED3DA00948BB7 /* SubjectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectTableViewCell.swift; sourceTree = "<group>"; };
+		52684219222ED40300948BB7 /* SubjectExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectExtensions.swift; sourceTree = "<group>"; };
+		5268421B222ED5AA00948BB7 /* Subjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subjects.swift; sourceTree = "<group>"; };
+		5268421F222EE77C00948BB7 /* StudentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsTableViewCell.swift; sourceTree = "<group>"; };
+		52684221222EE7A500948BB7 /* StudentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsViewController.swift; sourceTree = "<group>"; };
+		52684223222EE7F800948BB7 /* StudentsExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsExtensions.swift; sourceTree = "<group>"; };
+		52684225222EEFCF00948BB7 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		52A4D8BC220E19E7007EB103 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		52FF553A2203B4C700E841B7 /* XMLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLParser.swift; sourceTree = "<group>"; };
 		75395B4275D14465B2480D33 /* Pods-CuteBrains.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuteBrains.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CuteBrains/Pods-CuteBrains.debug.xcconfig"; sourceTree = "<group>"; };
@@ -225,6 +241,42 @@
 			path = Leaves;
 			sourceTree = "<group>";
 		};
+		52684213222ED32200948BB7 /* Subjects */ = {
+			isa = PBXGroup;
+			children = (
+				52684218222ED3E300948BB7 /* extension */,
+				52684214222ED3BC00948BB7 /* SubjectsViewController.swift */,
+				52684216222ED3DA00948BB7 /* SubjectTableViewCell.swift */,
+			);
+			path = Subjects;
+			sourceTree = "<group>";
+		};
+		52684218222ED3E300948BB7 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				52684219222ED40300948BB7 /* SubjectExtensions.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		5268421D222EE75B00948BB7 /* Students */ = {
+			isa = PBXGroup;
+			children = (
+				5268421E222EE76300948BB7 /* extensions */,
+				5268421F222EE77C00948BB7 /* StudentsTableViewCell.swift */,
+				52684221222EE7A500948BB7 /* StudentsViewController.swift */,
+			);
+			path = Students;
+			sourceTree = "<group>";
+		};
+		5268421E222EE76300948BB7 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				52684223222EE7F800948BB7 /* StudentsExtensions.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
 		DA8B104121F10F1E00526956 = {
 			isa = PBXGroup;
 			children = (
@@ -273,6 +325,8 @@
 		DA8B106D21F11E0E00526956 /* Controlers */ = {
 			isa = PBXGroup;
 			children = (
+				5268421D222EE75B00948BB7 /* Students */,
+				52684213222ED32200948BB7 /* Subjects */,
 				521FF3D2222C41A800BCA8AE /* myClass */,
 				521FF3D1222C413D00BCA8AE /* timetable */,
 				521FF3D0222C413200BCA8AE /* transport */,
@@ -297,6 +351,8 @@
 				5207986D22288D9800805FEF /* LeaveType.swift */,
 				52079873222899CE00805FEF /* MyLeaves.swift */,
 				521FF3DA222C421C00BCA8AE /* MyClass.swift */,
+				5268421B222ED5AA00948BB7 /* Subjects.swift */,
+				52684225222EEFCF00948BB7 /* Student.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -464,21 +520,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52684224222EE7F800948BB7 /* StudentsExtensions.swift in Sources */,
 				52FF553B2203B4C700E841B7 /* XMLParser.swift in Sources */,
 				523647432208BC9D0094D7BE /* NewsTableViewCell.swift in Sources */,
+				52684220222EE77C00948BB7 /* StudentsTableViewCell.swift in Sources */,
 				521FF3DB222C421C00BCA8AE /* MyClass.swift in Sources */,
 				DA92510621F4AD0800D4397A /* EventViewController.swift in Sources */,
 				52079874222899CE00805FEF /* MyLeaves.swift in Sources */,
 				524811C02228762D008F9F57 /* LeavesTypeExtensions.swift in Sources */,
 				523647412208BAB90094D7BE /* News.swift in Sources */,
 				521FF3D4222C41CB00BCA8AE /* MyClassViewController.swift in Sources */,
+				52684217222ED3DA00948BB7 /* SubjectTableViewCell.swift in Sources */,
 				52058D01220692B600181A78 /* EventTableViewCell.swift in Sources */,
+				5268421C222ED5AA00948BB7 /* Subjects.swift in Sources */,
 				52A4D8BD220E19E7007EB103 /* HomeViewController.swift in Sources */,
+				5268421A222ED40300948BB7 /* SubjectExtensions.swift in Sources */,
 				521FF3D6222C41E500BCA8AE /* MyClassCollectionViewCell.swift in Sources */,
+				52684215222ED3BC00948BB7 /* SubjectsViewController.swift in Sources */,
+				52684226222EEFCF00948BB7 /* Student.swift in Sources */,
 				520798722228982900805FEF /* MyLeavesExtension.swift in Sources */,
 				520798702228980D00805FEF /* MyLeavesTableViewCell.swift in Sources */,
 				525F94E8222576E50082D5A8 /* TimeTableCollectionViewCell.swift in Sources */,
 				52058CFF22066C4800181A78 /* Event.swift in Sources */,
+				52684222222EE7A500948BB7 /* StudentsViewController.swift in Sources */,
 				525DB06F220A050000C4CF76 /* MapViewController.swift in Sources */,
 				DA8B105021F10F1F00526956 /* ViewController.swift in Sources */,
 				523DDC9E220BC53E00180A07 /* GpsModel.swift in Sources */,
