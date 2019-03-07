@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DF6221DFBEA73D42E48C759B5AB12F9B"
-               BlueprintName = "SwiftyJSON"
+               BlueprintIdentifier = "259FA497B621B18FB2921DA18AA46AC2"
+               BlueprintName = "DynamicBlurView"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "SwiftyJSON.framework">
+               BuildableName = "DynamicBlurView.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

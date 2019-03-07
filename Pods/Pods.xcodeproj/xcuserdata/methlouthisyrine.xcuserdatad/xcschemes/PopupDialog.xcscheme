@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DF6221DFBEA73D42E48C759B5AB12F9B"
-               BlueprintName = "SwiftyJSON"
+               BlueprintIdentifier = "040D9D15EDA6A25D8D547C4C3E9EFCEF"
+               BlueprintName = "PopupDialog"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "SwiftyJSON.framework">
+               BuildableName = "PopupDialog.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

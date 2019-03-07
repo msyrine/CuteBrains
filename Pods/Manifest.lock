@@ -4,9 +4,12 @@ PODS:
     - Alamofire
     - EVReflection
     - XMLDictionary
+  - DynamicBlurView (3.0.1)
   - EVReflection (5.6.2):
     - EVReflection/Core (= 5.6.2)
   - EVReflection/Core (5.6.2)
+  - PopupDialog (0.9.2):
+    - DynamicBlurView (~> 3.0.1)
   - SwiftyJSON (4.1.0)
   - SwiftyXMLParser (4.3.0)
   - SWXMLHash (4.7.1)
@@ -15,6 +18,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 4.7.0)
   - AlamofireXmlToObjects
+  - PopupDialog (~> 0.9)
   - SwiftyJSON (~> 4.0)
   - SwiftyXMLParser (from `https://github.com/yahoojapan/SwiftyXMLParser.git`)
   - SWXMLHash (~> 4.7.0)
@@ -23,7 +27,9 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - AlamofireXmlToObjects
+    - DynamicBlurView
     - EVReflection
+    - PopupDialog
     - SwiftyJSON
     - SWXMLHash
     - XMLDictionary
@@ -40,12 +46,14 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   AlamofireXmlToObjects: 3614c4945a5b154041ea9ade99644b5de66d5857
+  DynamicBlurView: b1df5415f9bd31897549e5d7077e5ec120a4d636
   EVReflection: 640322f8a3aaf78cbc3c23892476b6adb636ebf0
+  PopupDialog: f4bb461bf70ff422be0b56656566424ee9273080
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
   SwiftyXMLParser: b2e0b0dd0e0fb1ac39869dd4a0c6181847af2945
   SWXMLHash: 661b67bc94a01fe71a6ad4ca690cf2cafa5d1d6f
   XMLDictionary: fa07b6ff422b3a91d47a5de9bc82e3fc04fbd167
 
-PODFILE CHECKSUM: 13dedb5d5bb5405c15c50160f2038a4d27964b4e
+PODFILE CHECKSUM: 1b5023b011928383edf32a06068a6ea9b398ac11
 
 COCOAPODS: 1.5.3

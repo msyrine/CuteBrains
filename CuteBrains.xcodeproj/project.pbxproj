@@ -21,6 +21,11 @@
 		5236473F2208B6AB0094D7BE /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5236473E2208B6AB0094D7BE /* NewsViewController.swift */; };
 		523647412208BAB90094D7BE /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523647402208BAB90094D7BE /* News.swift */; };
 		523647432208BC9D0094D7BE /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523647422208BC9D0094D7BE /* NewsTableViewCell.swift */; };
+		52382A13223134250056E2E3 /* TestSpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52382A12223134250056E2E3 /* TestSpinnerViewController.swift */; };
+		52382A1722315D960056E2E3 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52382A1622315D960056E2E3 /* NotificationsViewController.swift */; };
+		52382A1922315DBA0056E2E3 /* NotificationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52382A1822315DBA0056E2E3 /* NotificationsTableViewCell.swift */; };
+		52382A1B22315DDB0056E2E3 /* NotificationsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52382A1A22315DDB0056E2E3 /* NotificationsExtensions.swift */; };
+		52382A1D223160110056E2E3 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52382A1C223160110056E2E3 /* Notifications.swift */; };
 		523DDC9E220BC53E00180A07 /* GpsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523DDC9D220BC53E00180A07 /* GpsModel.swift */; };
 		524811BA22286FCE008F9F57 /* LeaveTypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524811B922286FCE008F9F57 /* LeaveTypeTableViewCell.swift */; };
 		524811BC2228757D008F9F57 /* MyLeavesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524811BB2228757D008F9F57 /* MyLeavesViewController.swift */; };
@@ -79,6 +84,11 @@
 		5236473E2208B6AB0094D7BE /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		523647402208BAB90094D7BE /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		523647422208BC9D0094D7BE /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		52382A12223134250056E2E3 /* TestSpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSpinnerViewController.swift; sourceTree = "<group>"; };
+		52382A1622315D960056E2E3 /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		52382A1822315DBA0056E2E3 /* NotificationsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsTableViewCell.swift; sourceTree = "<group>"; };
+		52382A1A22315DDB0056E2E3 /* NotificationsExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsExtensions.swift; sourceTree = "<group>"; };
+		52382A1C223160110056E2E3 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 		523DDC9D220BC53E00180A07 /* GpsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GpsModel.swift; sourceTree = "<group>"; };
 		524811B922286FCE008F9F57 /* LeaveTypeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveTypeTableViewCell.swift; sourceTree = "<group>"; };
 		524811BB2228757D008F9F57 /* MyLeavesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLeavesViewController.swift; sourceTree = "<group>"; };
@@ -223,6 +233,24 @@
 			path = extensions;
 			sourceTree = "<group>";
 		};
+		52382A1422315D6E0056E2E3 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				52382A1622315D960056E2E3 /* NotificationsViewController.swift */,
+				52382A1522315D790056E2E3 /* extensions */,
+				52382A1822315DBA0056E2E3 /* NotificationsTableViewCell.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		52382A1522315D790056E2E3 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				52382A1A22315DDB0056E2E3 /* NotificationsExtensions.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
 		524811BD222875FC008F9F57 /* extensionLeaves */ = {
 			isa = PBXGroup;
 			children = (
@@ -312,6 +340,7 @@
 				DA8B105621F10F2200526956 /* LaunchScreen.storyboard */,
 				DA8B105921F10F2200526956 /* Info.plist */,
 				52FF553A2203B4C700E841B7 /* XMLParser.swift */,
+				52382A12223134250056E2E3 /* TestSpinnerViewController.swift */,
 			);
 			path = CuteBrains;
 			sourceTree = "<group>";
@@ -328,6 +357,7 @@
 		DA8B106D21F11E0E00526956 /* Controlers */ = {
 			isa = PBXGroup;
 			children = (
+				52382A1422315D6E0056E2E3 /* Notifications */,
 				5268421D222EE75B00948BB7 /* Students */,
 				52684213222ED32200948BB7 /* Subjects */,
 				521FF3D2222C41A800BCA8AE /* myClass */,
@@ -356,6 +386,7 @@
 				521FF3DA222C421C00BCA8AE /* MyClass.swift */,
 				5268421B222ED5AA00948BB7 /* Subjects.swift */,
 				52684225222EEFCF00948BB7 /* Student.swift */,
+				52382A1C223160110056E2E3 /* Notifications.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -477,7 +508,9 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-CuteBrains/Pods-CuteBrains-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireXmlToObjects/AlamofireXmlToObjects.framework",
+				"${BUILT_PRODUCTS_DIR}/DynamicBlurView/DynamicBlurView.framework",
 				"${BUILT_PRODUCTS_DIR}/EVReflection/EVReflection.framework",
+				"${BUILT_PRODUCTS_DIR}/PopupDialog/PopupDialog.framework",
 				"${BUILT_PRODUCTS_DIR}/SWXMLHash/SWXMLHash.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyXMLParser/SwiftyXMLParser.framework",
@@ -487,7 +520,9 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireXmlToObjects.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DynamicBlurView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EVReflection.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PopupDialog.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWXMLHash.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyXMLParser.framework",
@@ -523,6 +558,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52382A1922315DBA0056E2E3 /* NotificationsTableViewCell.swift in Sources */,
 				52684224222EE7F800948BB7 /* StudentsExtensions.swift in Sources */,
 				52684228222F0D1F00948BB7 /* ApplyLeaveViewController.swift in Sources */,
 				52FF553B2203B4C700E841B7 /* XMLParser.swift in Sources */,
@@ -531,6 +567,7 @@
 				521FF3DB222C421C00BCA8AE /* MyClass.swift in Sources */,
 				DA92510621F4AD0800D4397A /* EventViewController.swift in Sources */,
 				52079874222899CE00805FEF /* MyLeaves.swift in Sources */,
+				52382A13223134250056E2E3 /* TestSpinnerViewController.swift in Sources */,
 				524811C02228762D008F9F57 /* LeavesTypeExtensions.swift in Sources */,
 				523647412208BAB90094D7BE /* News.swift in Sources */,
 				521FF3D4222C41CB00BCA8AE /* MyClassViewController.swift in Sources */,
@@ -545,6 +582,7 @@
 				520798722228982900805FEF /* MyLeavesExtension.swift in Sources */,
 				520798702228980D00805FEF /* MyLeavesTableViewCell.swift in Sources */,
 				525F94E8222576E50082D5A8 /* TimeTableCollectionViewCell.swift in Sources */,
+				52382A1D223160110056E2E3 /* Notifications.swift in Sources */,
 				52058CFF22066C4800181A78 /* Event.swift in Sources */,
 				52684222222EE7A500948BB7 /* StudentsViewController.swift in Sources */,
 				525DB06F220A050000C4CF76 /* MapViewController.swift in Sources */,
@@ -552,9 +590,11 @@
 				523DDC9E220BC53E00180A07 /* GpsModel.swift in Sources */,
 				524811BC2228757D008F9F57 /* MyLeavesViewController.swift in Sources */,
 				DA8B104E21F10F1F00526956 /* AppDelegate.swift in Sources */,
+				52382A1722315D960056E2E3 /* NotificationsViewController.swift in Sources */,
 				DA92510421F4945600D4397A /* ProfileViewController.swift in Sources */,
 				524811BA22286FCE008F9F57 /* LeaveTypeTableViewCell.swift in Sources */,
 				521FF3D9222C420800BCA8AE /* MyClassExtensions.swift in Sources */,
+				52382A1B22315DDB0056E2E3 /* NotificationsExtensions.swift in Sources */,
 				5236473F2208B6AB0094D7BE /* NewsViewController.swift in Sources */,
 				5207986E22288D9800805FEF /* LeaveType.swift in Sources */,
 				525F94EA222577040082D5A8 /* TimeTableViewCell.swift in Sources */,

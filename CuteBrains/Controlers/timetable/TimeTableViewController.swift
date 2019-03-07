@@ -19,6 +19,8 @@ class TimeTableViewController: UIViewController, UICollectionViewDelegate, UICol
     
     var timeTableInfo = [TimeTable]()
     
+    var batch_id : String! = ""
+    
     var timeTableInfoTrie = [TimeTable]()
     
     override func viewDidLoad() {

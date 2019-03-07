@@ -9,5 +9,5 @@ target 'CuteBrains' do
 	pod 'SWXMLHash', '~> 4.7.0'
    	pod "AlamofireXmlToObjects"
 	pod "SwiftyXMLParser", :git => 'https://github.com/yahoojapan/SwiftyXMLParser.git'
-
+	pod 'PopupDialog', '~> 0.9'
 end
