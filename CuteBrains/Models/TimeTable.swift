@@ -25,4 +25,12 @@ class TimeTable
         self.endTime = endTime
         self.weekDayID = weekDayID
     }
+    
+    init(weekDayID: String, subject: String, startTime: String, endTime: String, isBreak: String) {
+        self.subject = subject
+        self.startTime = startTime
+        self.isBreak = isBreak
+        self.endTime = endTime
+        self.weekDayID = weekDayID
+    }
 }

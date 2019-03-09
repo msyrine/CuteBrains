@@ -12,6 +12,9 @@ import Alamofire
 class MyLeavesViewController: UIViewController {
     
     
+    @IBOutlet weak var MyLeavesTableView: UITableView!
+    var MyLeavesTable = [MyLeaves]()
+    
     @IBOutlet weak var LeavesTypeTableView: UITableView!
     
     var LeaveTypeTable = [LeaveType]()
@@ -78,6 +81,58 @@ class MyLeavesViewController: UIViewController {
                 
                
                 
+        }
+        
+        
+        
+        
+        
+        let urlMyLeaves = "http://68.183.81.236:60/dev/cute%20brains/my_leaves_app.php"
+        
+        let headersMyLeaves:  HTTPHeaders = [
+            "Content-Type": "application/x-www-form-urlencoded",
+            ]
+        
+        let parametresMyLeaves = [
+            "admission_num": "T010"
+        ]
+        
+        Alamofire.request(urlMyLeaves, method: .post, parameters: parametresMyLeaves as Parameters, encoding: URLEncoding.default, headers: headersMyLeaves)
+            .responseJSON { response in
+                switch response.result{
+                case .failure(let error):
+                    
+                    print(error)
+                    print("erreeeuuur ")
+                case .success(let value):
+                    print(value)
+                    let json = value as? NSArray
+                    print(json)
+                    for  v in (json as! NSArray)
+                    {
+                        
+                        let new = v as! Dictionary<String,AnyObject>
+                      //  let nameLeave = new["name"]! as! String
+                        let is_half_day = new["is_half_day"]! as! String
+                        let reason = new["reason"]! as! String
+                        let start_date = new["start_date"]! as! String
+                        let days = new["days"]! as! String
+                        
+                        
+                        let n = MyLeaves(days: days, start_date: start_date, reason: reason, is_half_day: is_half_day)
+                        
+                        self.MyLeavesTable.append(n)
+                        
+                    }
+                    
+                    
+                    
+                   
+                    
+                    self.MyLeavesTableView.reloadData()
+                }
+                
+              
         }
         
 //

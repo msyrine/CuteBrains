@@ -12,7 +12,6 @@
 		52058D01220692B600181A78 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52058D00220692B600181A78 /* EventTableViewCell.swift */; };
 		5207986E22288D9800805FEF /* LeaveType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5207986D22288D9800805FEF /* LeaveType.swift */; };
 		520798702228980D00805FEF /* MyLeavesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5207986F2228980D00805FEF /* MyLeavesTableViewCell.swift */; };
-		520798722228982900805FEF /* MyLeavesExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520798712228982900805FEF /* MyLeavesExtension.swift */; };
 		52079874222899CE00805FEF /* MyLeaves.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52079873222899CE00805FEF /* MyLeaves.swift */; };
 		521FF3D4222C41CB00BCA8AE /* MyClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521FF3D3222C41CB00BCA8AE /* MyClassViewController.swift */; };
 		521FF3D6222C41E500BCA8AE /* MyClassCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521FF3D5222C41E500BCA8AE /* MyClassCollectionViewCell.swift */; };
@@ -75,7 +74,6 @@
 		52058D00220692B600181A78 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
 		5207986D22288D9800805FEF /* LeaveType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveType.swift; sourceTree = "<group>"; };
 		5207986F2228980D00805FEF /* MyLeavesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLeavesTableViewCell.swift; sourceTree = "<group>"; };
-		520798712228982900805FEF /* MyLeavesExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLeavesExtension.swift; sourceTree = "<group>"; };
 		52079873222899CE00805FEF /* MyLeaves.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLeaves.swift; sourceTree = "<group>"; };
 		521FF3D3222C41CB00BCA8AE /* MyClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClassViewController.swift; sourceTree = "<group>"; };
 		521FF3D5222C41E500BCA8AE /* MyClassCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClassCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -255,7 +253,6 @@
 			isa = PBXGroup;
 			children = (
 				524811BF2228762D008F9F57 /* LeavesTypeExtensions.swift */,
-				520798712228982900805FEF /* MyLeavesExtension.swift */,
 			);
 			path = extensionLeaves;
 			sourceTree = "<group>";
@@ -579,7 +576,6 @@
 				521FF3D6222C41E500BCA8AE /* MyClassCollectionViewCell.swift in Sources */,
 				52684215222ED3BC00948BB7 /* SubjectsViewController.swift in Sources */,
 				52684226222EEFCF00948BB7 /* Student.swift in Sources */,
-				520798722228982900805FEF /* MyLeavesExtension.swift in Sources */,
 				520798702228980D00805FEF /* MyLeavesTableViewCell.swift in Sources */,
 				525F94E8222576E50082D5A8 /* TimeTableCollectionViewCell.swift in Sources */,
 				52382A1D223160110056E2E3 /* Notifications.swift in Sources */,

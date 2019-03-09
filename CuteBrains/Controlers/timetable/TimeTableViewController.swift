@@ -19,23 +19,44 @@ class TimeTableViewController: UIViewController, UICollectionViewDelegate, UICol
     
     var timeTableInfo = [TimeTable]()
     
-    var batch_id : String! = ""
+    var batch_id : String! = "17"
     
     var timeTableInfoTrie = [TimeTable]()
+    var url: String! = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         print ("view did load")
-        let url = "http://68.183.81.236:60/dev/cute%20brains/timetable_employee.php"
+        if(batch_id == "")
+        {
+            self.url = "http://68.183.81.236:60/dev/cute%20brains/timetable_employee.php"
+        }
+        else
+        {
+           self.url = "http://68.183.81.236:60/dev/cute%20brains/timetable_employee_batch.php"
+        }
         
         let headers:  HTTPHeaders = [
             "Content-Type": "application/x-www-form-urlencoded",
             ]
         
-        let parametres = [
-            "admission_num": "T010"
-        ]
+        var parametres = Dictionary<String,AnyObject>()
+        
+        if(batch_id == "")
+        {
+            parametres = [
+                "admission_num": "T010"
+                ] as [String : AnyObject]
+        }
+        else
+        {
+            parametres = [
+                "admission_num": "T010",
+                "batch_id": batch_id
+                ] as [String : AnyObject]
+        }
+      
         
         Alamofire.request(url, method: .post, parameters: parametres as Parameters, encoding: URLEncoding.default, headers: headers)
             .responseJSON { response in
@@ -57,11 +78,23 @@ class TimeTableViewController: UIViewController, UICollectionViewDelegate, UICol
                         let is_break = new["is_break"]! as! String
                         let start_time = new["start_time"]! as! String
                         let end_time = new["end_time"]! as! String
-                        let cname = new["cname"]! as! String
+                        var cname: String
+                        if(self.batch_id == "")
+                        {
+                            cname = new["cname"]! as! String
+                            let n = TimeTable(weekDayID: weekday_id, subject: name, classSubject: cname, startTime: start_time, endTime: end_time, isBreak: is_break)
+                               self.timeTableInfo.append(n)
+                            
+                        }
+                      else
+                        {
+                             let n = TimeTable(weekDayID: weekday_id, subject: name, startTime: start_time, endTime: end_time, isBreak: is_break)
+                               self.timeTableInfo.append(n)
+                        }
 
-                       let n = TimeTable(weekDayID: weekday_id, subject: name, classSubject: cname, startTime: start_time, endTime: end_time, isBreak: is_break)
+                      
 
-                        self.timeTableInfo.append(n)
+                     
 
                     }
                     
@@ -193,7 +226,14 @@ extension TimeTableViewController: UITableViewDataSource , UITableViewDelegate
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableviewTimeTable.dequeueReusableCell(withIdentifier: "tableViewTimeTable", for: indexPath) as! TimeTableViewCell
         cell.Subject.text = timeTableInfoTrie[indexPath.row].subject + "   "
-        cell.className.text = "  " + timeTableInfoTrie[indexPath.row].classSubject
+        if(self.batch_id == "")
+        {
+              cell.className.text = "  " + timeTableInfoTrie[indexPath.row].classSubject
+        }
+        else
+        {
+            cell.className.isHidden = true
+        }
         cell.timeClass.text = timeTableInfoTrie[indexPath.row].startTime + "-" + timeTableInfoTrie[indexPath.row].endTime
 
 
