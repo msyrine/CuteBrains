@@ -14,7 +14,7 @@ class StudentsViewController: UIViewController {
     @IBOutlet weak var StudentTableView: UITableView!
     
     var students = [Student]()
-    
+    var batchId = ""
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -21,4 +21,7 @@ class SubjectTableViewCell: UITableViewCell {
     
     
     @IBOutlet weak var first_name: UILabel!
+    
+    
+    
 }

@@ -12,6 +12,8 @@ import Alamofire
 class TimeTableViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
 
+    var batchId = ""
+    
     @IBOutlet weak var collectionViewTimeTable: UICollectionView!
     @IBOutlet weak var tableviewTimeTable: UITableView!
     
@@ -19,7 +21,7 @@ class TimeTableViewController: UIViewController, UICollectionViewDelegate, UICol
     
     var timeTableInfo = [TimeTable]()
     
-    var batch_id : String! = "17"
+    
     
     var timeTableInfoTrie = [TimeTable]()
     var url: String! = ""
@@ -28,7 +30,7 @@ class TimeTableViewController: UIViewController, UICollectionViewDelegate, UICol
         super.viewDidLoad()
 
         print ("view did load")
-        if(batch_id == "")
+        if(batchId == "")
         {
             self.url = "http://68.183.81.236:60/dev/cute%20brains/timetable_employee.php"
         }
@@ -43,7 +45,7 @@ class TimeTableViewController: UIViewController, UICollectionViewDelegate, UICol
         
         var parametres = Dictionary<String,AnyObject>()
         
-        if(batch_id == "")
+        if(batchId == "")
         {
             parametres = [
                 "admission_num": "T010"
@@ -53,7 +55,7 @@ class TimeTableViewController: UIViewController, UICollectionViewDelegate, UICol
         {
             parametres = [
                 "admission_num": "T010",
-                "batch_id": batch_id
+                "batch_id": batchId
                 ] as [String : AnyObject]
         }
       
@@ -79,7 +81,7 @@ class TimeTableViewController: UIViewController, UICollectionViewDelegate, UICol
                         let start_time = new["start_time"]! as! String
                         let end_time = new["end_time"]! as! String
                         var cname: String
-                        if(self.batch_id == "")
+                        if(self.batchId == "")
                         {
                             cname = new["cname"]! as! String
                             let n = TimeTable(weekDayID: weekday_id, subject: name, classSubject: cname, startTime: start_time, endTime: end_time, isBreak: is_break)
@@ -226,7 +228,7 @@ extension TimeTableViewController: UITableViewDataSource , UITableViewDelegate
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableviewTimeTable.dequeueReusableCell(withIdentifier: "tableViewTimeTable", for: indexPath) as! TimeTableViewCell
         cell.Subject.text = timeTableInfoTrie[indexPath.row].subject + "   "
-        if(self.batch_id == "")
+        if(self.batchId == "")
         {
               cell.className.text = "  " + timeTableInfoTrie[indexPath.row].classSubject
         }

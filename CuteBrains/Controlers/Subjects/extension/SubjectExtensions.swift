@@ -29,5 +29,6 @@ extension SubjectsViewController: UITableViewDelegate, UITableViewDataSource
         return cell ?? SubjectTableViewCell()
     }
     
+    //but
     
 }

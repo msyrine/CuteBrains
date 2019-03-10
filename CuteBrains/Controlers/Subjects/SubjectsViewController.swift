@@ -16,6 +16,7 @@ class SubjectsViewController: UIViewController {
     
     var SubjectTables = [Subjects]()
     
+    var batchId = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
