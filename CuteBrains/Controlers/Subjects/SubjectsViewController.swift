@@ -17,21 +17,38 @@ class SubjectsViewController: UIViewController {
     var SubjectTables = [Subjects]()
     
     var batchId = ""
+    var url = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         
-        
-        let url = "http://68.183.81.236:60/dev/cute%20brains/subjects_employee.php"
-        
+        if(batchId != "")
+        {
+         url = "http://68.183.81.236:60/dev/cute%20brains/subjects_employee.php"
+        }
+        else
+        {
+         url = "http://68.183.81.236:60/dev/cute%20brains/subjects.php"
+        }
         let headers:  HTTPHeaders = [
             "Content-Type": "application/x-www-form-urlencoded",
             ]
         
-        let parametres = [
-            "batch_id": "17"
-        ]
+        var parametres = Dictionary<String,AnyObject>()
+        
+        if(batchId == "")
+        {
+            parametres = [
+               "admission_num": AppDelegate.currentUser.userName!
+                ] as [String : AnyObject]
+        }
+        else
+        {
+            parametres = [
+                "batch_id": batchId
+                ] as [String : AnyObject]
+        }
         
         Alamofire.request(url, method: .post, parameters: parametres as Parameters, encoding: URLEncoding.default, headers: headers)
             .responseJSON { response in

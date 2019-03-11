@@ -30,17 +30,24 @@ class TimeTableViewController: UIViewController, UICollectionViewDelegate, UICol
         super.viewDidLoad()
 
         print ("view did load")
-        if(batchId == "")
+        if(AppDelegate.currentUser.isEmployee)
         {
-            self.url = "http://68.183.81.236:60/dev/cute%20brains/timetable_employee.php"
+            if(batchId == "")
+            {
+                self.url = "http://68.183.81.236:60/dev/cute%20brains/timetable_employee.php"
+            }
+            else
+            {
+                self.url = "http://68.183.81.236:60/dev/cute%20brains/timetable_employee_batch.php"
+            }
         }
         else
         {
-           self.url = "http://68.183.81.236:60/dev/cute%20brains/timetable_employee_batch.php"
+           self.url = "http://68.183.81.236:60/dev/cute%20brains/timetable.php"
         }
         
         let headers:  HTTPHeaders = [
-            "Content-Type": "application/x-www-form-urlencoded",
+            "Content-Type": "application/x-www-form-urlencoded"
             ]
         
         var parametres = Dictionary<String,AnyObject>()
@@ -48,13 +55,13 @@ class TimeTableViewController: UIViewController, UICollectionViewDelegate, UICol
         if(batchId == "")
         {
             parametres = [
-                "admission_num": "T010"
+                "admission_num": AppDelegate.currentUser.userName!
                 ] as [String : AnyObject]
         }
         else
         {
             parametres = [
-                "admission_num": "T010",
+                "admission_num": AppDelegate.currentUser.userName!,
                 "batch_id": batchId
                 ] as [String : AnyObject]
         }
@@ -81,19 +88,26 @@ class TimeTableViewController: UIViewController, UICollectionViewDelegate, UICol
                         let start_time = new["start_time"]! as! String
                         let end_time = new["end_time"]! as! String
                         var cname: String
-                        if(self.batchId == "")
+                        if(AppDelegate.currentUser.isEmployee)
                         {
-                            cname = new["cname"]! as! String
-                            let n = TimeTable(weekDayID: weekday_id, subject: name, classSubject: cname, startTime: start_time, endTime: end_time, isBreak: is_break)
-                               self.timeTableInfo.append(n)
+                            if(self.batchId == "" )
+                            {
+                                cname = new["cname"]! as! String
+                                let n = TimeTable(weekDayID: weekday_id, subject: name, classSubject: cname, startTime: start_time, endTime: end_time, isBreak: is_break)
+                                self.timeTableInfo.append(n)
                             
+                            }
+                            else
+                            {
+                             let n = TimeTable(weekDayID: weekday_id, subject: name, startTime: start_time, endTime: end_time, isBreak: is_break)
+                               self.timeTableInfo.append(n)
+                            }
                         }
                       else
                         {
-                             let n = TimeTable(weekDayID: weekday_id, subject: name, startTime: start_time, endTime: end_time, isBreak: is_break)
-                               self.timeTableInfo.append(n)
+                            let n = TimeTable(weekDayID: weekday_id, subject: name, startTime: start_time, endTime: end_time, isBreak: is_break)
+                            self.timeTableInfo.append(n)
                         }
-
                       
 
                      
@@ -145,9 +159,7 @@ class TimeTableViewController: UIViewController, UICollectionViewDelegate, UICol
                     
                     self.timeTableInfoTrie.append(s)
                 }
-            }
-            print(timeTableInfoTrie.count)
-            
+            }            
         case 1:
             self.timeTableInfoTrie.removeAll()
             for s in self.timeTableInfo
@@ -158,7 +170,6 @@ class TimeTableViewController: UIViewController, UICollectionViewDelegate, UICol
                     self.timeTableInfoTrie.append(s)
                 }
             }
-            print(timeTableInfoTrie.count)
         case 2:
             self.timeTableInfoTrie.removeAll()
             for s in self.timeTableInfo
@@ -168,7 +179,6 @@ class TimeTableViewController: UIViewController, UICollectionViewDelegate, UICol
                     self.timeTableInfoTrie.append(s)
                 }
             }
-            print(timeTableInfoTrie.count)
         case 3:
             self.timeTableInfoTrie.removeAll()
             for s in self.timeTableInfo
@@ -178,7 +188,6 @@ class TimeTableViewController: UIViewController, UICollectionViewDelegate, UICol
                     self.timeTableInfoTrie.append(s)
                 }
             }
-           print(timeTableInfoTrie.count)
         case 4:
             self.timeTableInfoTrie.removeAll()
             for s in self.timeTableInfo
@@ -188,7 +197,6 @@ class TimeTableViewController: UIViewController, UICollectionViewDelegate, UICol
                     self.timeTableInfoTrie.append(s)
                 }
             }
-         print(timeTableInfoTrie.count)
         case 5:
             self.timeTableInfoTrie.removeAll()
             for s in self.timeTableInfo
@@ -198,7 +206,7 @@ class TimeTableViewController: UIViewController, UICollectionViewDelegate, UICol
                     self.timeTableInfoTrie.append(s)
                 }
             }
-           print(timeTableInfoTrie.count)
+          
         default:
             self.timeTableInfoTrie.removeAll()
             for s in self.timeTableInfo
@@ -208,7 +216,7 @@ class TimeTableViewController: UIViewController, UICollectionViewDelegate, UICol
                     self.timeTableInfoTrie.append(s)
                 }
             }
-             print(timeTableInfoTrie.count)
+            
         }
         self.tableviewTimeTable.reloadData()
     }
@@ -228,10 +236,15 @@ extension TimeTableViewController: UITableViewDataSource , UITableViewDelegate
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableviewTimeTable.dequeueReusableCell(withIdentifier: "tableViewTimeTable", for: indexPath) as! TimeTableViewCell
         cell.Subject.text = timeTableInfoTrie[indexPath.row].subject + "   "
-        if(self.batchId == "")
+        if(AppDelegate.currentUser.isEmployee)
+        { if(self.batchId == "")
         {
               cell.className.text = "  " + timeTableInfoTrie[indexPath.row].classSubject
         }
+        else
+        {
+            cell.className.isHidden = true
+            }}
         else
         {
             cell.className.isHidden = true

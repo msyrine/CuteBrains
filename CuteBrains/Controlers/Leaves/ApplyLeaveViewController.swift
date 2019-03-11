@@ -83,7 +83,7 @@ class ApplyLeaveViewController: UIViewController{
         
         let parametres = [
              "type": self.leaveType,
-             "admission_no": "T010",
+             "admission_no": AppDelegate.currentUser.userName!,
              "start_date": self.startDay.text!,
              "typend_datee": self.ToTextField.text!,
              "reason": self.ReasonTextField.text!,

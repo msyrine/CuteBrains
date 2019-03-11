@@ -26,7 +26,7 @@ class NotificationsViewController: UIViewController {
             ]
         
         let parametres = [
-            "admission_num": "T010",
+            "admission_num": AppDelegate.currentUser.userName!,
             "all": "1",
             "isEmployee": "1"
         ]

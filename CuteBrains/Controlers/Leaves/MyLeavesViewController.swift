@@ -32,7 +32,7 @@ class MyLeavesViewController: UIViewController {
             ]
         
         let parametres = [
-            "admission_num": "T010"
+            "admission_num": AppDelegate.currentUser.userName!
         ]
         
         Alamofire.request(url, method: .post, parameters: parametres as Parameters, encoding: URLEncoding.default, headers: headers)
